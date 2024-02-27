@@ -1,12 +1,4 @@
 class CalculatorRepository {
-  // late double _num1;
-  // late double _num2;
-
-  // CalculatorRepository() {
-  //   _num1 = 0;
-  //   _num2 = 0;
-  // }
-
   int addition(int num1, int num2) {
     return num1 + num2;
   }
@@ -16,7 +8,7 @@ class CalculatorRepository {
   }
 
   double division(double num1, double num2) {
-    return num1 == 0 || num2 == 0? throw Exception() : num1 / num2;
+    return num1 == 0 || num2 == 0 ? throw Exception() : num1 / num2;
   }
 
   double multplication(double num1, double num2) {
