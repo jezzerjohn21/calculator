@@ -9,27 +9,27 @@ void main() {
 
   group('Addition', () {
     test(
-        'Addition:Given two numbers, When add method is called, Then the sum is calculated correctly',
+        'Addition: Given two numbers, When add method is called, Then the sum is calculated correctly result is 5.',
         () {
-      // Given
-      int number1 = 2;
-      int number2 = 3;
-      // When
-      int result = calculatorRepository.addition(number1, number2);
-      // Then
-      expect(result, equals(5));
+       // Given
+       int number1 = 2;
+       int number2 = 3;
+       // When
+       int result = calculatorRepository.addition(number1, number2);
+       // Then
+       expect(result, equals(5));
     });
 
     test(
-        'Addition: Given two negative numbers, When add method is called, Then the sum is calculated correctly',
+        'Addition: Given two negative numbers, When add method is called, Then the sum is calculated correctly result is 0.',
         () {
-      // Given
-      int number1 = -1;
-      int number2 = 1;
-      // When
-      int result = calculatorRepository.addition(number1, number2);
-      // Then
-      expect(result, equals(0));
+       // Given
+       int number1 = -1;
+       int number2 = 1;
+       // When
+       int result = calculatorRepository.addition(number1, number2);
+       // Then
+       expect(result, equals(0));
     });
   });
 
